@@ -25,7 +25,7 @@ const app = express();
 const IS_PROD = true;
 
 const allowedOrigins = IS_PROD
-  ? "https://start-up-smoky.vercel.app"
+  ? "https://startup-tutorial.vercel.app"
   : "http://localhost:5173";
 
 app.use(
