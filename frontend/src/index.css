@@ -1,1 +1,93 @@
 @import "tailwindcss";
+
+/* --------------------------------------------------
+   THEME TOKENS (used by Tailwind via var())
+-------------------------------------------------- */
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-card: var(--card);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-border: var(--border);
+  --color-divider: var(--divider);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-secondary-hover: var(--accent-secondary-hover);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+}
+
+/* --------------------------------------------------
+   LIGHT MODE (Default)
+-------------------------------------------------- */
+:root {
+  /* Backgrounds */
+  --bg: #ffffffe8;               /* softer than pure white */
+  --surface: #ffffff;
+  --surface-elevated: #ffffffef; /* for modals/cards */
+  --card: #ffffff;
+
+  /* Text */
+  --text-primary: #0f172a;     /* slate-900 */
+  --text-secondary: #334155;   /* slate-700 */
+  --text-muted: #64748b;       /* slate-500 */
+
+  /* Borders & dividers */
+  --border: #e2e8f0;           /* slate-200 (softer) */
+  --divider: #f1f5f9;          /* slate-100 */
+
+  /* Primary Accent (vibrant indigo - modern tech feel) */
+  --accent: #3f71e6;           /* brighter indigo-500/600 blend */
+  --accent-hover: #463ff8;     /* deeper on hover */
+
+  /* Secondary Accent (emerald - growth, matches, positive actions) */
+  --accent-secondary: #10b981; /* emerald-500 */
+  --accent-secondary-hover: #059669; /* emerald-600 */
+
+  /* Status */
+  --success: #16a34a;          /* green-600 */
+  --warning: #d97706;          /* amber-600 */
+  --error: #dc2626;            /* red-600 */
+}
+
+/* --------------------------------------------------
+   DARK MODE
+-------------------------------------------------- */
+.dark {
+  /* Backgrounds - softer off-black/deep navy */
+  --bg: #0f172a;               /* slate-900 */
+  --surface: #1e293b;          /* slate-800 */
+  --surface-elevated: #334155; /* slate-700 - for elevated cards/modals */
+  --card: #1e293b;             /* slate-800 */
+
+  /* Text */
+  --text-primary: #f8fafc;     /* slate-50 */
+  --text-secondary: #cbd5e1;   /* slate-300 */
+  --text-muted: #94a3b8;       /* slate-400 */
+
+  /* Borders & dividers */
+  --border: #334155;           /* slate-700 */
+  --divider: #1e293b;          /* slate-800 */
+
+  /* Primary Accent (brighter in dark mode for pop) */
+  --accent: #818cf8;           /* indigo-400 */
+  --accent-hover: #a5b4fc;     /* indigo-300 */
+
+  /* Secondary Accent (emerald - stays vibrant) */
+  --accent-secondary: #34d399; /* emerald-400 */
+  --accent-secondary-hover: #6ee7b7; /* emerald-300 */
+
+  /* Status */
+  --success: #22c55e;          /* green-500 */
+  --warning: #f59e0b;          /* amber-500 */
+  --error: #ef4444;            /* red-500 */
+}
