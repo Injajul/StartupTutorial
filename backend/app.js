@@ -5,8 +5,8 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // Routes
-// import clerkRoutes from "./routes/clerk.route.js";
-// import userRoutes from "./routes/user.route.js";
+import clerkRoutes from "./routes/clerk.route.js";
+import userRoutes from "./routes/user.route.js";
 // import founderProfileRoutes from "./routes/founderProfile.routes.js";
 // import investorProfileRoutes from "./routes/investorProfile.routes.js";
 // import matchRequestRoutes from "./routes/matchRequest.routes.js";
@@ -41,7 +41,7 @@ app.use(
  * ----------------------------------------
  * Clerk requires raw body
  */
-// app.use("/api/webhook", clerkRoutes);
+app.use("/api/webhook", clerkRoutes);
 
 /**
  * ----------------------------------------
@@ -56,7 +56,7 @@ app.use(express.json());
  * API ROUTES
  * ----------------------------------------
  */
-// app.use("/api/users", userRoutes);
+app.use("/api/users", userRoutes);
 
 // app.use("/api/founders", founderProfileRoutes);
 // app.use("/api/investors", investorProfileRoutes);
