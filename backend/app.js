@@ -7,14 +7,14 @@ dotenv.config();
 // Routes
 import clerkRoutes from "./routes/clerk.route.js";
 import userRoutes from "./routes/user.route.js";
-// import founderProfileRoutes from "./routes/founderProfile.routes.js";
-// import investorProfileRoutes from "./routes/investorProfile.routes.js";
-// import matchRequestRoutes from "./routes/matchRequest.routes.js";
-// import connectionRoutes from "./routes/connection.routes.js";
-// import chatRoomRoutes from "./routes/chatRoom.routes.js";
-// import messageRoutes from "./routes/message.routes.js";
-// import notificationRoutes from "./routes/notification.routes.js";
-// import recommendationRoutes from "./routes/recommendation.route.js"
+import founderProfileRoutes from "./routes/founderProfile.route.js";
+import investorProfileRoutes from "./routes/investorProfile.route.js";
+import matchRequestRoutes from "./routes/matchRequest.route.js";
+import connectionRoutes from "./routes/connection.route.js";
+import chatRoomRoutes from "./routes/chatRoom.route.js";
+import messageRoutes from "./routes/message.route.js";
+import notificationRoutes from "./routes/notification.route.js";
+import recommendationRoutes from "./routes/recommendation.route.js"
 const app = express();
 
 /**
@@ -58,16 +58,16 @@ app.use(express.json());
  */
 app.use("/api/users", userRoutes);
 
-// app.use("/api/founders", founderProfileRoutes);
-// app.use("/api/investors", investorProfileRoutes);
+app.use("/api/founders", founderProfileRoutes);
+app.use("/api/investors", investorProfileRoutes);
 
-// app.use("/api/match-requests", matchRequestRoutes);
-// app.use("/api/connections", connectionRoutes);
+app.use("/api/match-requests", matchRequestRoutes);
+app.use("/api/connections", connectionRoutes);
 
-// app.use("/api/chat-rooms", chatRoomRoutes);
-// app.use("/api/messages", messageRoutes);
+app.use("/api/chat-rooms", chatRoomRoutes);
+app.use("/api/messages", messageRoutes);
 
-// app.use("/api/notifications", notificationRoutes);
-// app.use("/api/recommendations", recommendationRoutes);
+app.use("/api/notifications", notificationRoutes);
+app.use("/api/recommendations", recommendationRoutes);
 
 export default app;
