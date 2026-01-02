@@ -12,8 +12,15 @@ import CreateFounderProfile from "../pages/founder/CreateFounderProfile";
 import SelectRole from "../pages/register/SelectRole";
 import FounderPublicProfile  from "../pages/founder/FounderPublicProfile"
 
+import Profile from "../pages/profile/Profile"
+import OwnProfile from "../pages/profile/OwnProfile"
+
 import CreateInvestorProfile from "../pages/investor/CreateInvestorProfile"
 import UpdateInvestorProfile from "../pages/investor/UpdateInvestorProfile"
+import ConnectionMain from "../pages/connection/ConnectionMain";
+import ChatRoom from "../pages/connection/ChatRoom";
+import NotificationsPage from "../pages/request/Notification";
+import Discover from "../pages/Discover/Discover";
 function AppRoutes() {
   return (
      <Routes>
@@ -31,22 +38,22 @@ function AppRoutes() {
         <Route path="/founders/create" element={<CreateFounderProfile />} />
         <Route path="/founders/update" element={<UpdateFounderProfile />} />
 
-        {/* <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/profile/:userId" element={<OwnProfile />} />
-        <Route path="/founders/:userId" element={<FounderPublicProfile />} />
+        {/* <Route path="/founders/:userId" element={<FounderPublicProfile />} />
         <Route path="/investors/:userId" element={<OwnProfile />} /> */}
 
 
         <Route path="/investors/create" element={<CreateInvestorProfile />} />
         <Route path="/investors/update" element={<UpdateInvestorProfile />} />
 
-        {/* <Route path="/connections" element={<ConnectionMain />} />
+        <Route path="/connections" element={<ConnectionMain />} />
 
         <Route path="/chat/:roomId" element={<ChatRoom />} />
 
         <Route path="/notifications" element={<NotificationsPage />} />
         
-        <Route path="/discover" element={<Discover />} /> */}
+        <Route path="/discover" element={<Discover />} />
       </Route>
     </Routes>
   )

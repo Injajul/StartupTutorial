@@ -1,5 +1,5 @@
 
-const USE_LOCAL = false; 
+const USE_LOCAL = true; 
 
 const BASE_DOMAIN = USE_LOCAL
   ?"https://startuptutorial.onrender.com": "http://localhost:5004"

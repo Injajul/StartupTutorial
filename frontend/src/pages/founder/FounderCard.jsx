@@ -2,7 +2,7 @@ import React from "react";
 
 import { FaBriefcase, FaHandshake, FaUsers, FaSeedling } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
-// import SentMatchRequest from "../../components/user/SentMatchRequest";
+import SentMatchRequest from "../../components/user/SentMatchRequest";
 import { useNavigate } from "react-router-dom";
 
 const FounderCard = ({ founder }) => {
@@ -101,9 +101,9 @@ const FounderCard = ({ founder }) => {
       </div>
 
       {/* Footer */}
-      {/* <div className="px-6 pb-6 mt-auto" onClick={(e) => e.stopPropagation()}>
+      <div className="px-6 pb-6 mt-auto" onClick={(e) => e.stopPropagation()}>
         <SentMatchRequest targetUserId={founderUserId} />
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaMapMarkedAlt } from "react-icons/fa";
-// import SentMatchRequest from "../../components/user/SentMatchRequest";
+import SentMatchRequest from "../../components/user/SentMatchRequest";
 
 const InvestorCard = ({ investor }) => {
   const navigate = useNavigate();
@@ -117,12 +117,12 @@ const InvestorCard = ({ investor }) => {
       </div>
 
       {/* ================= FOOTER ================= */}
-      {/* <div
+      <div
         className="px-6 pb-6 mt-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <SentMatchRequest targetUserId={investorUserId} />
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -19,6 +19,6 @@ export const store = configureStore({
         chatRoom:chatRoomReducer,
         message:messageReducer,
         notification:notificationReducer,
-        recommendation: recommendationReducer,
+        recommendations: recommendationReducer,
     }
 })

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 
-// import Sidebar from "../components/home/Sidebar";
+import Sidebar from "../pages/home/Sidebar";
 
 export default function AppMainLayout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -9,10 +9,10 @@ export default function AppMainLayout() {
   return (
     <div className="flex min-h-screen bg-card text-text-primary overflow-hidden">
       {/* Sidebar */}
-      {/* <Sidebar
+      <Sidebar
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
-      /> */}
+      />
 
       {/* Main Content */}
       <main
