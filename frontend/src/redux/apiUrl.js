@@ -1,8 +1,8 @@
 
-const USE_LOCAL = true; 
+const USE_LOCAL = false; 
 
 const BASE_DOMAIN = USE_LOCAL
-  ?"https://startuptutorial.onrender.com": "http://localhost:5004"
+  ?"put your render URL": "http://localhost:5004"
 
  
 // https://socially-d8k0.onrender.com

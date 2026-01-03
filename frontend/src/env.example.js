@@ -1,0 +1,1 @@
+VITE_CLERK_PUBLISHABLE_KEY= "put your clerk publishable key"

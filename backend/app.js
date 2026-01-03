@@ -22,10 +22,10 @@ const app = express();
  * CORS CONFIG
  * ----------------------------------------
  */
-const IS_PROD =true;
+const IS_PROD =false;
 
 const allowedOrigins = IS_PROD
-  ? "https://startup-tutorial.vercel.app"
+  ? "put your vercel URL"
   : "http://localhost:5173";
 
 app.use(
